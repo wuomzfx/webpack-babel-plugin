@@ -1,0 +1,53 @@
+{
+  "name": "webpack-babel-plugin",
+  "version": "0.0.2",
+  "description": "babel plugin for webpack",
+  "main": "./lib/index.js",
+  "module": "./src/index.js",
+  "scripts": {
+    "build": "babel src/ --out-dir lib/",
+    "prepublish": "rimraf lib/ && npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuomzfx/webpack-babel-plugin.git"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "webpack"
+  ],
+  "author": "相学长 <75851654@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wuomzfx/webpack-babel-plugin/issues"
+  },
+  "engines": {
+    "node": ">= 8.9.1"
+  },
+  "homepage": "https://github.com/wuomzfx/webpack-babel-plugin#readme",
+  "dependencies": {
+    "source-map": "^0.6.1",
+    "webpack-sources": "^1.1.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "7 || ^7.0.0-beta || ^7.0.0-rc",
+    "webpack": "2 || 3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.37",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.0.5",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
